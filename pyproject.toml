@@ -1,0 +1,58 @@
+[project]
+name = "research-council"
+version = "0.1.0"
+description = "Agentic AI system for scientific research — GraphRAG + Multi-LLM Council"
+requires-python = ">=3.11"
+readme = "README.md"
+
+dependencies = [
+    # Orchestration
+    "langgraph>=0.2.0",
+    "langgraph-bigtool>=0.0.3",
+    "langchain-core>=0.3.0",
+    "langchain-groq>=0.2.0",
+    "langchain-openai>=0.2.0",
+
+    # Graph database
+    "neo4j>=5.20.0",
+    "neo4j-graphrag>=1.0.0",
+
+    # Vector store
+    "chromadb>=0.5.0",
+
+    # Embeddings (CPU only)
+    "sentence-transformers>=3.0.0",
+
+    # LLM clients
+    "groq>=0.9.0",
+    "httpx>=0.27.0",
+    "openai>=1.0.0",
+
+    # Ingestion
+    "pymupdf>=1.24.0",
+    "biopython>=1.84",
+    "arxiv>=2.1.0",
+
+    # NLP (optional entity extraction)
+    "spacy>=3.7.0",
+
+    # API
+    "fastapi>=0.111.0",
+    "uvicorn>=0.30.0",
+    "pydantic>=2.7.0",
+
+    # Observability
+    "langfuse>=2.0.0",
+
+    # Utilities
+    "python-dotenv>=1.0.0",
+    "tenacity>=8.3.0",
+    "rich>=13.7.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ingestion", "graph", "tools", "council", "orchestrator", "api", "config.py"]

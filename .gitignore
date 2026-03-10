@@ -1,0 +1,32 @@
+# ── Python ─────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Environment ────────────────────────────────────────────
+.env
+.venv/
+venv/
+env/
+
+# ── Data (local, never commit) ─────────────────────────────
+data/raw_papers/
+data/chunks/
+data/chroma_db/
+data/conclusions/
+
+# ── IDE ────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── OS ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Neo4j local data ──────────────────────────────────────
+neo4j_data/
