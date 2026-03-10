@@ -47,3 +47,4 @@ User Query → FastAPI → LangGraph Orchestrator
 - **RAM:** 16 GB system memory
 - **VRAM:** 4 GB GPU (optional — all embeddings run on CPU)
 - **LLM inference:** Groq + OpenRouter APIs (no local models required)
+# Research_council
