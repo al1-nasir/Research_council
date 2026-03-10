@@ -14,7 +14,7 @@
 **4 AI agents deliberate over a knowledge graph of scientific papers.**  
 **They debate. They disagree. Then they give you one honest, cited answer.**
 
-[🚀 Quick Start](#quick-start) · [📖 How It Works](#how-it-works) · [🎯 Use Cases](#use-cases) · [🏗️ Architecture](#architecture) · [🤝 Contributing](#contributing)
+[ Quick Start](#quick-start) · [ How It Works](#how-it-works) · [ Use Cases](#use-cases) · [ Architecture](#architecture) · [ Contributing](#contributing)
 
 </div>
 
